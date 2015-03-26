@@ -1,10 +1,10 @@
 ### これはなに
 
-任意のページのDOMを変更するChrome拡張です
+Webページに対して任意の変更を加えるChrome拡張です。
 
-例えば、```<div id="hoge"></div>``` の要素を```<div id="hoge" data-hoge="hogehoge"></div>``` のように変更したり、
+例えば、```<div id="hoge"></div>``` の要素を```<div id="hoge" data-hoge="hogehoge"></div>``` のように変更することができます。
 
-Webページに対して任意のJavaScriptを埋め込んで実行することができます
+また、任意のJavaScriptを埋め込んで実行することもできます。
 
 ### 使い方
 
