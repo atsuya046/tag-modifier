@@ -2,7 +2,13 @@
 
 任意のページのDOMを変更するChrome拡張です
 
+例えば、```<div id="hoge"></div>``` の要素を```<div id="hoge" data-hoge="hogehoge"></div>``` のように変更したり、
+
+Webページに対して任意のJavaScriptを埋め込んで実行することができます
+
 ### 使い方
+
+#### 0. Chromeに取り込む
 
 0. このパッケージをcloneする
 
@@ -14,21 +20,26 @@
 
 0. 'パッケージ化されていない拡張機能を読み込む'で'app'ディレクトリを選択する
 
+
+#### 1. タグを変更する
+
 0. DOMを操作したいページを開く
 
-0. 検索バーの隣にあるアイコンをクリックするとDOMを操作するためのPopupが表示され、以下の項目を編集する
+0. 拡張機能のアイコンをクリックするとPopupが表示されるので、以下の項目を変更する。
 
     * id : 操作したいDOMのid
     * attr name : 属性名
     * attr value : 属性値
-    * ![Popup](docs/popup.png "Popup")
+    * ![Tag](docs/popup_tag.png "Tag")
 
-0. Loadボタンを押すとページがリロードされ、指定したDOMに変更が適用される
+0. 'Load'ボタンを押すとページがリロードされ、指定したDOMに変更が適用される
 
+#### 2. JavaScriptを埋め込む
 
-### 例)
-```<div id="hoge"></div>``` の要素があるページで、
+0. JSを埋め込みたいページを開く
 
-'id' => hoge, 'attr name' => data-hoge, 'attr value' => hogehoge 入力してLoadした場合
+0. 拡張機能のアイコンをクリックし、タブを'Script'に切り替えると、textareaが表示されるので、そこに任意のjavascriptを記述する
 
-```<div id="hoge" data-hoge="hogehoge"></div>``` のようにDOMが変更される
+    * ![Script](docs/popup_js.png "Script")
+
+0. 'Load'ボタンを押すとページがリロードされ、任意のJavaScriptが埋め込まれる

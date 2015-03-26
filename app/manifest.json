@@ -17,7 +17,7 @@
   },
   "content_scripts": [
     {
-      "matches" : ["http://example.com/"],
+      "matches" : ["http://example.com/*"],
       "js" : ["scripts/content.js", "scripts/jquery.min.js"],
       "run_at" : "document_end"
     }
