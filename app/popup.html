@@ -8,32 +8,47 @@
 </head>
 <body>
   <div class="container">
-    <form class="form-horizontal">
-      <div class="form-group">
-        <label class="col-md-4 control-label">id</label>
-        <div class="col-md-8">
-          <input id="elm-id" type="text" name="element-id" value="">          
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#tab1" data-toggle="tab">Tag</a></li>
+      <li><a href="#tab2" data-toggle="tab">Script</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="tab1" class="tab-pane fade in active">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="col-md-4 control-label">id</label>
+            <div class="col-md-8">
+              <input id="elm-id" type="text" name="element-id" value="">          
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" >attr name</label>
+            <div class="col-md-8">
+              <input id="attr-name" type="text" name="attr-name" value="">                
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label">attr value</label>
+            <div class="col-md-8">
+              <input id="attr-val" type="text" name="attr-val" value="">
+            </div>
+          </div>
+        </form>  
+      </div>
+      <div id="tab2" class="tab-pane fade">
+        <div class="col-md-12">
+          <textarea id="emb-js" name="embeded-script" rows="8" cols="40"></textarea>
         </div>
       </div>
-      <div class="form-group">
-        <label class="col-md-4 control-label" >attr name</label>
-        <div class="col-md-8">
-          <input id="attr-name" type="text" name="attr-name" value="">                
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="col-md-4 control-label">attr value</label>
-        <div class="col-md-8">
-          <input id="attr-val" type="text" name="attr-val" value="">
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-md-offset-4 col-md-8">
-          <button id="load-button" class="btn btn-primary" type="button" name="button">Load</button>
-        </div>          
-      </div>
-    </form>    
+    </div>
+    <div class="row">
+      <div class="col-md-offset-4 col-md-8">
+        <button id="load-button" class="btn btn-primary" type="button" name="button">Load</button>
+      </div>          
+    </div>
+  
   </div>
+  <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
   <script type="text/javascript" src="scripts/popup.js"></script>
 </body>
 </html>
